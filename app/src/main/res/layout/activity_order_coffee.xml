@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button"
+    tools:context=".OrderCoffee">
+
+    <CheckBox
+        android:id="@+id/milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:buttonTint="#FFFFFF"
+        android:onClick="updatePrice"
+        android:text="@string/milk"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <CheckBox
+        android:id="@+id/cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#FFFFFF"
+        android:onClick="updatePrice"
+        android:text="@string/cream"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="@+id/milk"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toBottomOf="@+id/milk" />
+
+    <CheckBox
+        android:id="@+id/caramel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:buttonTint="#FFFFFF"
+        android:onClick="updatePrice"
+        android:text="@string/caramel"
+        android:textColor="#090909"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/milk"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <CheckBox
+        android:id="@+id/syrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#FFFFFF"
+        android:onClick="updatePrice"
+        android:text="@string/syrup"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="@+id/caramel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/caramel"
+        app:layout_constraintTop_toBottomOf="@+id/caramel" />
+
+    <CheckBox
+        android:id="@+id/whippedCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:buttonTint="#FFFFFF"
+        android:onClick="updatePrice"
+        android:text="@string/whipped_cream"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="@+id/cream"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/milk"
+        app:layout_constraintTop_toBottomOf="@+id/cream" />
+
+    <Spinner
+        android:id="@+id/sizeSpinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/caramel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <Spinner
+        android:id="@+id/quantitySpinner"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sizeSpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sizeSpinner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#090909"
+        app:layout_constraintEnd_toEndOf="@+id/quantitySpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/quantitySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/quantitySpinner" />
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="placeOrder"
+        android:text="@string/order_button"
+        app:layout_constraintEnd_toEndOf="@+id/priceView"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toEndOf="@+id/whippedCream"
+        app:layout_constraintTop_toBottomOf="@+id/priceView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="292dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/coffee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/coffee" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="152dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/order_coffee"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

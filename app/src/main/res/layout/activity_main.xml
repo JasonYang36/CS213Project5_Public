@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:text="@string/welcome"
+        android:textColor="#DAD1C8"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orders"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <ImageButton
+        android:id="@+id/coffeeButton"
+        android:layout_width="320dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="92dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#CCAB93"
+        android:contentDescription="@string/order_coffee"
+        android:onClick="orderCoffee"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/coffee_button" />
+
+    <ImageButton
+        android:id="@+id/coffeeButton2"
+        android:layout_width="320dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#CCAB93"
+        android:contentDescription="@string/order_coffee"
+        android:onClick="orderDonuts"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/coffeeButton"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeButton"
+        app:srcCompat="@drawable/donut_button" />
+
+    <ImageButton
+        android:id="@+id/orders"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#CCAB93"
+        android:contentDescription="@string/order_coffee"
+        android:onClick="orders"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/storeOrdersButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/coffeeButton"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeButton2"
+        app:srcCompat="@drawable/order" />
+
+    <ImageButton
+        android:id="@+id/storeOrdersButton"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#CCAB93"
+        android:contentDescription="@string/order_coffee"
+        android:onClick="storeOrdersPage"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/coffeeButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/coffeeButton"
+        app:layout_constraintTop_toBottomOf="@+id/coffeeButton2"
+        app:srcCompat="@drawable/store_order" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

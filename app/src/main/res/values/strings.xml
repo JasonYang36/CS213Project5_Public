@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">CS213Project5</string>
+    <string name="app_title">Rutgers Cafe</string>
+    <string name="coffee">Coffee</string>
+    <string name="donut">Donuts</string>
+    <string name="welcome">Welcome to Rutgers Cafe!</string>
+    <string-array name="donut_types">
+        <item>Cake</item>
+        <item>Sugar</item>
+        <item>Munchkin</item>
+        <item>Vanilla</item>
+        <item>Chocolate</item>
+        <item>Strawberry</item>
+        <item>Banana</item>
+        <item>Grape</item>
+        <item>Orange</item>
+        <item>Water</item>
+        <item>Pizza</item>
+    </string-array>
+    <string-array name="coffee_sizes">
+        <item>Short</item>
+        <item>Tall</item>
+        <item>Grande</item>
+        <item>Venti</item>
+    </string-array>
+    <string name="order_donut">Order Donut</string>
+    <string name="quantity">Quantity (Select)</string>
+    <string name="donut_flavor">Donut Flavor (Select)</string>
+    <string name="donut_ordered">Donut Ordered</string>
+    <string name="store_orders">Store Orders</string>
+    <string name="order_number">Order Number (Select)</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="no_orders">No Orders</string>
+    <string name="milk">Milk</string>
+    <string name="syrup">Syrup</string>
+    <string name="cream">Cream</string>
+    <string name="caramel">Caramel</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="order_button">Order</string>
+    <string name="remove">Remove</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="subtotal_with_dollar">Subtotal: $</string>
+    <string name="tax_with_dollar">Tax: $</string>
+    <string name="total_with_dollar">Total: $</string>
+    <string name="sales_tax">Sales Tax</string>
+    <string name="total">Total</string>
+    <string name="current_order">Current Order</string>
+    <string name="order_coffee">Order Coffee</string>
+    <string name="dollar_sign">$</string>
+    <string name="empty" />
+    <string name="remove_query">Remove selected item?</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+</resources>
+
